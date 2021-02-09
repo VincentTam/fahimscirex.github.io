@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gmspec
+gemspec
 
 gem "github-pages", group: :jekyll_plugins
 
