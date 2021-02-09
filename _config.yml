@@ -12,12 +12,12 @@ author: Fahim Montasir Mishbah
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: /aboutme
   Blog:
-    - Books: "/tags#Books"
-    - Journal: "/tags#Journal/"
-    - Linux: "/tags#Linux/"
-  Contact: "contact"
+  - Books: /tags#Books
+  - Journal: /tags#Journal/
+  - Linux: /tags#Linux/
+  Contact: /contact
 
 # --- Logo --- #
 
@@ -197,17 +197,15 @@ kramdown:
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
+  - scope:
+      path: "_posts"
+      type: posts
     values:
-      layout: "post"
+      layout: post
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
       readtime: true # add estimated reading time on all blog posts
-  -
-    scope:
+  - scope:
       path: "" # all files
     values:
       layout: "page"
@@ -221,6 +219,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - vendor
   - screenshot.png
   - docs/
 
