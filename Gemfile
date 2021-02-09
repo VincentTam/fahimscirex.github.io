@@ -11,5 +11,5 @@ gem "jekyll-paginate"
 gem "jekyll-remote-theme"
 gem "jekyll-seo-tag"
 gem "dotenv"
-gem "jekyll-admin"
+#gem "jekyll-admin"
 end
