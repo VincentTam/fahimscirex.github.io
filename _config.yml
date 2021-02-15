@@ -79,7 +79,7 @@ url-pretty: "fahimscirex.github.io"
 link-tags: true
 
 # Excerpt Word Length - Truncates the excerpt to the specified number of words on the index page
-excerpt_length: 50
+excerpt_length: 100
 
 # --- Colours / background image --- #
 
@@ -170,7 +170,7 @@ date_format: "%B %-d, %Y"
 # Remote theme
 remote_theme: "fahimscirex/beautiful-jekyll"
 
-# Category Collection
+# --- Category Collection --- #
 # collections:
 #  category:
 #    output: true
@@ -181,6 +181,12 @@ remote_theme: "fahimscirex/beautiful-jekyll"
 #     type:  category
 #     values:
 #     layout: "category"
+
+# --- Algolia Search --- #
+# algolia:
+#    application_id: V3P4KH4RSA
+#    index_name: 'search'
+#    files_to_exclude: []
 
 
 # --- You don't need to touch anything below here (but you can if you want) --- #

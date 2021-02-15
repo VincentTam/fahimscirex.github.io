@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://fahimscirex.github.io/sitemap.xml

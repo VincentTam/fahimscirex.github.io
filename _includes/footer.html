@@ -1,4 +1,26 @@
 <footer>
+
+  <!-- Html Elements for Search -->
+  <div class="search-footer" id="search-container">
+    <input type="text" id="search-input" placeholder="Search the site...">
+    <ul id="results-container"></ul>
+    </div>
+    
+  <!-- Script pointing to search-script.js -->
+    <script src="/assets/js/search-script.js" type="text/javascript"></script>
+    
+  <!-- Configuration -->
+    <script>
+    SimpleJekyllSearch({
+      searchResultTemplate: '<div><a href="{url}"><h4>{title}</h4></a><span class="post-meta">{{ page.date | date: date_format }}</span></div>',
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/search.json'
+    })
+    noResultsText ("No result found!")
+    </script>
+  <!--end-->
+
   <div class="container-md beautiful-jekyll-footer">
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
